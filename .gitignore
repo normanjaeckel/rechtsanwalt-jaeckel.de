@@ -4,3 +4,6 @@ _site/
 .sass-cache
 .jekyll-metadata
 private/
+
+node_modules/
+bower_components/

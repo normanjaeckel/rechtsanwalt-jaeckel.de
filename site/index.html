@@ -1,0 +1,15 @@
+---
+layout: base
+---
+
+{% assign sections = site.sections | sort: 'weight' %}
+
+{% for section in sections %}
+
+    <section id="{{ section.id-attr }}" class="{{ section.classes | join: ' ' }}">
+        <div class="container">
+            {{ section }}
+        </div>
+    </section>
+
+{% endfor %}
